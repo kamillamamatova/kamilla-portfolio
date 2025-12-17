@@ -8,7 +8,7 @@ export default function AboutPage(){
                 </p>
             </header>
 
-            <section className = "rounded-2xl border border-ink/10 bg-canvas p-6 shadow-soft">
+            <section className = "rounded-2xl border border-ink/10 bg-canvas/60 backdrop-blur-sm p-6 shadow-soft">
                 <h2 className = "text-base font-semibold">What I care about</h2>
                 <div className = "mt-4 space-y-3 text-sm leading-relaxed text-ink/75">
                     <p>
@@ -25,7 +25,7 @@ export default function AboutPage(){
             </section>
 
             <section className = "grid gap-4 md:grid-cols-2">
-                <div className = "rounded-2xl border border-ink/10 bg-canvas p-6 shadow-soft">
+                <div className = "rounded-2xl border border-ink/10 bg-canvas/60 backdrop-blur-sm p-6 shadow-soft">
                     <h2 className = "text-base font-semibold">Currently</h2>
                     <p className = "mt-2 text-sm text-ink/75">
                         Building my portfolio site, strengthening fundamentals, 
@@ -34,7 +34,7 @@ export default function AboutPage(){
                     </p>
                 </div>
 
-                <div className = "rounded-2xl border border-ink/10 bg-canvas p-6 shadow-soft">
+                <div className = "rounded-2xl border border-ink/10 bg-canvas/60 backdrop-blur-sm p-6 shadow-soft">
                     <h2 className = "text-base font-semibold">Outside of class</h2>
                     <p className = "mt-2 text-sm text-ink/75">
                         I don't know

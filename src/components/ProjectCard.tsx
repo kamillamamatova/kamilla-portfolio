@@ -2,7 +2,7 @@ import type { Project } from "@/content/projects";
 
 export default function ProjectCard({ project }: { project: Project}){
     return(
-        <article className = "rounded-2xl border border-ink/10 bg-canvas p-6 shadow-soft">
+        <article className = "rounded-3xl border border-ink/10 bg-canvas/60 backdrop-blur-sm p-6 shadow-soft">
             <header className = "space-y-2">
                 <h2 className = "text-lg font-semibold tracking-tight">{project.title}</h2>
                 <p className = "text-sm leading-relaxed text-ink/75">{project.description}</p>
