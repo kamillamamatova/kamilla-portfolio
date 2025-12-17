@@ -43,7 +43,7 @@ export default function HomePage(){
           </a>
 
           <a 
-            href = "https://www.linkedin.com/in/kamillamamatova/"
+            href = "https://www.linkedin.com/in/kamilla-mamatova/"
             target = "_blank"
             rel = "norefferrer"
             className = "text-sm text-ink/80 underline decoration-petal decoration-2 underline-offset-4 hover:text-ink focus:outline-none focus:ring-2 focus:ring-blush"
