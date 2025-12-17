@@ -2,9 +2,9 @@ import type { Project } from "@/content/projects";
 
 export default function ProjectCard({ project }: { project: Project}){
     return(
-        <article className = "rounded-3xl border border-ink/10 bg-canvas/60 backdrop-blur-sm p-6 shadow-soft">
+        <article className = "group relative rounded-3xl border border-ink/5 bg-canvas/50 p-6 shadow-sm transition hover:shadow-soft hover:bg-canvas/60 backdrop-blur-sm">
             <header className = "space-y-2">
-                <h2 className = "text-lg font-semibold tracking-tight">{project.title}</h2>
+                <h2 className = "text-xl font-serif font-medium tracking-wide text-ink">{project.title}</h2>
                 <p className = "text-sm leading-relaxed text-ink/75">{project.description}</p>
             </header>
 
@@ -37,7 +37,7 @@ export default function ProjectCard({ project }: { project: Project}){
                         href = {link.href}
                         target = "_blank"
                         rel = "norefferrer"
-                        className = "text-sm underline decoration-petal decoration-2 underline-offset-4 hover:text-ink focus:ring-2 focus:ring-blush"
+                        className = "text-sm underline decoration-petal decoration-2 underline-offset-4 hover:decoration-wavy focus:ring-2 focus:ring-blush"
                     >
                         {link.label}
                     </a>
