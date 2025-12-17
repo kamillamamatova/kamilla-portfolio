@@ -13,7 +13,7 @@ export default function ContactPage(){
                     <p>
                         Email:{" "}
                         <a
-                            className = "underline decoration-petal decoration-2 underline-offset-4 hover:text-ink focus:ouline_none focus:ring-2 focus:ring-blush"
+                            className = "underline decoration-petal decoration-2 underline-offset-4 hover:decoration-wavy focus:ouline_none focus:ring-2 focus:ring-blush"
                             href = "mailto:kamillamamatova.km@gmail.com"
                         >
                             kamillamamatova.km@gmail.com
@@ -22,7 +22,7 @@ export default function ContactPage(){
                     <p>
                         GitHub:{" "}
                         <a
-                            className = "underline decoration-petal decoration-2 underline-offset-4 hover:text-ink focus:ouline_none focus:ring-2 focus:ring-blush"
+                            className = "underline decoration-petal decoration-2 underline-offset-4 hover:decoration-wavy focus:ouline_none focus:ring-2 focus:ring-blush"
                             href = "http://github.com/kamillamamatova"
                             target = "_blank"
                             rel = "norefferrer"
@@ -33,7 +33,7 @@ export default function ContactPage(){
                     <p>
                         LinkedIn:{" "}
                         <a
-                            className = "underline decoration-petal decoration-2 underline-offset-4 hover:text-ink focus:ouline_none focus:ring-2 focus:ring-blush"
+                            className = "underline decoration-petal decoration-2 underline-offset-4 hover:decoration-wavy focus:ouline_none focus:ring-2 focus:ring-blush"
                             href = "https://www.linkedin.com/in/kamilla-mamatova/"
                             target = "_blank"
                             rel = "norefferrer"
