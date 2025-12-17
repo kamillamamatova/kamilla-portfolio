@@ -2,7 +2,8 @@ import Link from "next/link";
 
 export default function HomePage(){
   return(
-    <div className = "space-y-14">
+    <div className = "space-y-14 relative">
+      <div className = "absolute -z-10 top-0 right-0 h-64 w-64 rounded-full bg-petal/30 blur-3xl"/>
       <section className = "space-y-6">
         <div className = "inline-flex items-center gap-2 rounded-full border border-ink/10 bg-canvas px-3 py-1 text-xs text-ink/70 shadow-soft">
           <span className = "h-2 w-2 rounded-full bg-petal" aria-hidden = "true" />
