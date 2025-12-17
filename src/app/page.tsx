@@ -9,7 +9,7 @@ export default function HomePage(){
             Junior CS student with SWE and AI focus
         </div>
 
-        <h1 className = "text-3xl font-semibold tracking-tight md:text-5xl">
+        <h1 className = "text-3xl font-serif tracking-tight md:text-5xl">
           I build clean, accessible products and I like making the details feel calm.
         </h1>
 
@@ -72,7 +72,7 @@ export default function HomePage(){
             key={c.title}
             className="rounded-2xl border border-ink/10 bg-canvas p-6 shadow-soft"
           >
-            <h2 className="text-base font-semibold">{c.title}</h2>
+            <h2 className="text-base font-serif">{c.title}</h2>
             <p className="mt-2 text-sm leading-relaxed text-ink/75">{c.body}</p>
           </div>
         ))}

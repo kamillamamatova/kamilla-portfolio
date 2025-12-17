@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import { Inter, Playfair_Display } from "next/font/google";
+
+const sans = Inter({subsets: ["latin"], variable: "--font-sans"});
+const serif = Playfair_Display({subsets: ["latin"], variable: "--font-serif"});
 
 export const metadata: Metadata = {
   title: "Kamilla Mamatova — Software Engineering & AI",
@@ -14,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className = {`${sans.variable} ${serif.variable}`}>
       <body>
         <a
           href = "#main"

@@ -19,6 +19,10 @@ const config: Config = {
             boxShadow: {
                 soft: "0 10px 30px rgba(62, 39, 35, 0.08)",
             },
+            fontFamily: {
+                sans: ["var(--font-sans)"],
+                serif: ["var(--font-serif)"],
+            },
         },
     },
     plugins: [],
