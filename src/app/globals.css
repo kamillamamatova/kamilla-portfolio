@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@theme {
+@theme{
   --color-ink: #3E2723; /* Espresso */
   --color-canvas: #F5F1E6; /* Soft linen */
   --color-petal: #F9A8BB; /* Cherry blossom */
@@ -8,7 +8,11 @@
   --color-blush: #E36887;
 }
 
-body {
+body{
   background: var(--color-canvas);
   color: var(--color-ink);
+}
+
+.decoration-wavy{
+  text-decoration-style: wavy;
 }

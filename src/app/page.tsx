@@ -37,7 +37,7 @@ export default function HomePage(){
             href = "https://github.com/kamillamamatova"
             target = "_blank"
             rel = "norefferrer"
-            className = "text-sm text-ink/80 underline decoration-petal decoration-2 underline-offset-2 hover:text-ink focus:outline-none focus:ring-2 focus:ring-blush"
+            className = "text-sm text-ink/80 underline decoration-petal decoration-2 underline-offset-2 hover:decoration-wavy focus:outline-none focus:ring-2 focus:ring-blush"
           >
             GitHub
           </a>
@@ -46,7 +46,7 @@ export default function HomePage(){
             href = "https://www.linkedin.com/in/kamilla-mamatova/"
             target = "_blank"
             rel = "norefferrer"
-            className = "text-sm text-ink/80 underline decoration-petal decoration-2 underline-offset-4 hover:text-ink focus:outline-none focus:ring-2 focus:ring-blush"
+            className = "text-sm text-ink/80 underline decoration-petal decoration-2 underline-offset-4 hover:decoration-wavy focus:outline-none focus:ring-2 focus:ring-blush"
             >
               LinkedIn
           </a>
