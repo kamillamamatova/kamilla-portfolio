@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 export default function HomePage(){
   return(
@@ -14,17 +13,6 @@ export default function HomePage(){
         <h1 className = "text-3xl font-serif tracking-tight md:text-5xl">
           I build clean, accessible products and I like making the details feel calm.
         </h1>
-
-        <div className = "mb-8 flex justify-center md: justify-start">
-          <div className = "relative h-32 w-32 overflow-hidden rounded-full border-4 border-white shadow-soft">
-            <Image
-              src = "/photo.jpg"
-              alt = "Kamilla Mamatova"
-              fill
-              className = "object-cover"
-            />
-          </div>
-        </div>
 
         <p className = "max-w-2xl text-base leading-relaxed text-ink/80 md:text-lg">
           I’m a Computer Science junior interested in Software Engineering and applied AI.

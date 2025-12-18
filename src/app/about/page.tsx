@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function AboutPage(){
     return(
         <div className = "space-y-10">
@@ -7,6 +9,17 @@ export default function AboutPage(){
                     I'm Kamilla, a junior Computer Science student passionate about SWE and AI...
                 </p>
             </header>
+
+            <div className = "mb-8 flex justify-center md: justify-start">
+                <div className = "relative h-45 w-45 overflow-hidden rounded-full border-4 border-white shadow-soft">
+                    <Image
+                        src = "/photome.jpg"
+                        alt = "Kamilla Mamatova"
+                        fill
+                        className = "object-cover"
+                    />
+                </div>
+            </div>
 
             <section className = "rounded-3xl border border-ink/10 bg-canvas/60 backdrop-blur-sm p-6 shadow-soft">
                 <h2 className = "text-base font-semibold">What I care about</h2>
