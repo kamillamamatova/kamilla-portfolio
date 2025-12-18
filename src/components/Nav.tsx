@@ -35,15 +35,6 @@ export default function Nav(){
                             </li>
                         ))}
                     </ul>
-
-                    <div className = "ml-4 h-4 w-[1px] bg-ink/10" aria-hidden = "true" />
-                    <a
-                        href = "/resume.pdf"
-                        target = "_blank"
-                        className = "ml-4 rounded-full bg-ink/5 px-4 py-2 text-sm font-medium text-ink transition hover:bg-petal/20 hover:text-ink-dark"
-                    >
-                        Resume
-                    </a>
                 </nav>
             </div>
         </header>
