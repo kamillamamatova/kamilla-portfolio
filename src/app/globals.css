@@ -16,3 +16,9 @@ body{
 .decoration-wavy{
   text-decoration-style: wavy;
 }
+
+/* Selection */
+::selection{
+  background-color: var(--color-peony);
+  color: var(--color-ink);
+}
