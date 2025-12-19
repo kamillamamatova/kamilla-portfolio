@@ -22,3 +22,18 @@ body{
   background-color: var(--color-peony);
   color: var(--color-ink);
 }
+
+/* Scrollbar */
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background: var(--color-canvas);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: var(--color-peony);
+  border-radius: 20px;
+  border: 3px solid var(--color-canvas);
+}
