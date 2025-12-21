@@ -28,7 +28,7 @@ export const projects: Project[] = [
             { label: "Live", href: "https://ai-resume-analyzer-c9chdla4qiz6633ikqjdyd.streamlit.app/"},
             { label: "Code", href: "https://github.com/kamillamamatova/ai-resume-analyzer"},
         ],
-        highlights: ["Role: Solo"],
+        highlights: ["Role: Solo Developer"],
     },
     {
         title: "Mitsy's Print",
@@ -48,6 +48,16 @@ export const projects: Project[] = [
             { label: "Live", href: "https://job-market-insights.vercel.app/"},
             { label: "Code", href: "https://github.com/kamillamamatova/job-market-insights"},
         ],
-        highlights: ["Role: Solo"],
+        highlights: ["Role: Solo Developer"],
+    },
+    {
+        title: "FocusUp",
+        description: "A simple, embeddable timer for students and makers: count up to your daily goal, log sessions, and keep streaks alive. Designed for students, developers, and makers who want accountability inside Notion or the browser.",
+        tags: ["HTML", "CSS", "Axios", "Tailwind CSS", "HTML5", "RapidAPI"],
+        links: [
+            //{ label: "Live", href: "https://job-market-insights.vercel.app/"},
+            { label: "Code", href: "https://github.com/kamillamamatova/focusup"},
+        ],
+        highlights: ["Role: Solo Developer"],
     },
 ];
