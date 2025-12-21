@@ -63,7 +63,7 @@ export default function AboutPage(){
                      "Plotly", "MatPlotlib"].map((tech) => (
                         <span
                             key = {tech}
-                            className = "rounded-full bg-petal/55 px-3 py-1 text-xs text-ink/80 shadow-sm border border-ink/5"
+                            className = "rounded-full bg-petal/50 px-3 py-1 text-xs text-ink/75 shadow-sm border border-ink/5"
                         >
                             {tech}
                         </span>

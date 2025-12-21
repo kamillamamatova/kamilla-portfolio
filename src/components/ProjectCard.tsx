@@ -12,7 +12,7 @@ export default function ProjectCard({ project }: { project: Project}){
                 {project.tags.map((t) => (
                     <span
                         key = {t}
-                        className = "rounded-full border border-ink/10 bg-ink/5 px-3 py-1 text-xs text-ink/70"
+                        className = "rounded-full border border-ink/10 bg-petal/50 px-3 py-1 text-xs text-ink/75"
                     >
                         {t}
                     </span>
