@@ -18,7 +18,7 @@ export const projects: Project[] = [
             //{ label: "Live", href: "https://"},
             { label: "Code", href: "https://github.com/kamillamamatova/rocket-time"},
         ],
-        highlights: ["Role: Backend", "Focus:"],
+        highlights: ["Role: Backend"],
     },
     {
         title: "AI Resume Analyzer",
@@ -28,7 +28,7 @@ export const projects: Project[] = [
             { label: "Live", href: "https://ai-resume-analyzer-c9chdla4qiz6633ikqjdyd.streamlit.app/"},
             { label: "Code", href: "https://github.com/kamillamamatova/ai-resume-analyzer"},
         ],
-        highlights: ["Role: Solo", "Focus:"],
+        highlights: ["Role: Solo"],
     },
     {
         title: "Mitsy's Print",
@@ -38,7 +38,7 @@ export const projects: Project[] = [
             //{ label: "Live", href: "https://ai-resume-analyzer-c9chdla4qiz6633ikqjdyd.streamlit.app/"},
             { label: "Code", href: "https://github.com/kamillamamatova/mitsys-print"},
         ],
-        highlights: ["Role: Game Settings & Systems Integration", "Focus:"],
+        highlights: ["Role: Game Settings & Systems Integration"],
     },
     {
         title: "Job Market Insights",
@@ -48,6 +48,6 @@ export const projects: Project[] = [
             { label: "Live", href: "https://job-market-insights.vercel.app/"},
             { label: "Code", href: "https://github.com/kamillamamatova/job-market-insights"},
         ],
-        highlights: ["Role: Solo", "Focus:"],
+        highlights: ["Role: Solo"],
     },
 ];
