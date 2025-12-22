@@ -11,6 +11,12 @@ export default function Footer(){
                     Thanks for dropping by!
                 </p>
             </div>
+
+            <div className = "mt-8 flex justify-center pb-8">
+                <a href = "#main" className = "rounded-full border border-ink/10 bg-white p-3 text-ink/60 shadow-sm transition hover:text-ink hover:shadow-md">
+                    ↑ Top
+                </a>
+            </div>
         </footer>
     );
 }
