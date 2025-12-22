@@ -10,6 +10,15 @@ const serif = Playfair_Display({subsets: ["latin"], variable: "--font-serif"});
 export const metadata: Metadata = {
   title: "Kamilla Mamatova — Software Engineering & AI",
   description: "Junior CS student focused on Software Engineering and AI.",
+
+  openGraph: {
+    title: "Kamilla Mamatova",
+    description: "Junior CS student focused on Software Engineering and AI.",
+    url: "https://",
+    siteName: "Kamilla Mamatova",
+    locale: "en-US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
