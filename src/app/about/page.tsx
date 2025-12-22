@@ -70,6 +70,28 @@ export default function AboutPage(){
                     ))}
                 </div>
             </section>
+
+            <section className = "space-y-3">
+                <h2 className = "text-base font-semibold font-serif">Course Work</h2>
+                <ul className = "grid grid-cols-2 gap-2 text-sm text-ink/75 sm:grid-cols-3">
+                    {[
+                        "Computer Science I & II",
+                        "Calculus w/ Analytical Geometry I & II",
+                        "Matrix & Linear Algebra",
+                        "AI for Game Programming",
+                        "Physics w/ Calculus I",
+                        "Statistical Methods I",
+                        "Computer Logic and Organization",
+                        "Discrete I",
+                        "Object-Oriented Programming",
+                    ].map((course) => (
+                        <li key = {course} className = "flex items-center gap-2">
+                            <span className = "h-1.5 w-1.5 roudned-full bg-petal/60" />
+                            {course}
+                        </li>
+                    ))}
+                </ul>
+            </section>
         </div>
     );
 }
