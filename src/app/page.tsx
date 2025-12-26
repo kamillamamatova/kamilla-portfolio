@@ -7,7 +7,7 @@ export default function HomePage(){
       <section className = "space-y-6 animate-fade-in-up">
         <div className = "inline-flex items-center gap-2 rounded-full border border-ink/10 bg-canvas px-3 py-1 text-xs text-ink/70 shadow-soft">
           <span className = "h-2 w-2 rounded-full bg-petal" aria-hidden = "true" />
-            Junior CS student with SWE and AI focus
+            Junior CS student with SWE focus
         </div>
 
         <h1 className = "text-3xl font-serif tracking-tight md:text-5xl">
