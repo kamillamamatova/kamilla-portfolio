@@ -15,7 +15,7 @@ export default function HomePage(){
         </h1>
 
         <p className = "max-w-2xl text-base leading-relaxed text-ink/80 md:text-lg">
-          I’m a Computer Science junior interested in Software Engineering and applied AI.
+          I’m a Computer Science junior interested in Software Engineering.
           I care about readable code, thoughtful UX, and shipping work that holds up in the real world.
         </p>
 
@@ -73,10 +73,10 @@ export default function HomePage(){
             title: "Accessibility always",
             body: "Keyboard support, contrast, semantics, and calm UIs that don’t fight the user.",
           },
-          {
+          /*{
             title: "AI with purpose",
             body: "Applied ML/LLM work that’s measurable, not vague hype.",
-          },
+          },*/
         ].map((c) => (
           <div
             key={c.title}

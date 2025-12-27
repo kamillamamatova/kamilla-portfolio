@@ -8,12 +8,12 @@ const sans = Inter({subsets: ["latin"], variable: "--font-sans"});
 const serif = Playfair_Display({subsets: ["latin"], variable: "--font-serif"});
 
 export const metadata: Metadata = {
-  title: "Kamilla Mamatova — Software Engineering & AI",
-  description: "Junior CS student focused on Software Engineering and AI.",
+  title: "Kamilla Mamatova — Software Engineering",
+  description: "Junior CS student focused on Software Engineering",
 
   openGraph: {
     title: "Kamilla Mamatova",
-    description: "Junior CS student focused on Software Engineering and AI.",
+    description: "Junior CS student focused on Software Engineering",
     url: "https://",
     siteName: "Kamilla Mamatova",
     locale: "en-US",

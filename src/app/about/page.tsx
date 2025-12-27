@@ -6,7 +6,7 @@ export default function AboutPage(){
             <header className = "space-y-3">
                 <h1 className = "text-3xl font-semibold tracking-tight">About me</h1>
                 <p className = "max-w-2xl text-ink/80">
-                    I'm Kamilla, a junior Computer Science student passionate about SWE and AI...
+                    I'm Kamilla, a junior Computer Science student passionate about SWE...
                 </p>
             </header>
 
