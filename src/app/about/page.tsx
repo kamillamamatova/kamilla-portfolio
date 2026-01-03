@@ -11,7 +11,7 @@ export default function AboutPage(){
             </header>
 
             <div className = "mb-8 flex justify-center md: justify-start">
-                <div className = "relative h-45 w-45 overflow-hidden rounded-full border-4 border-white shadow-soft">
+                <div className = "relative h-65 w-65 overflow-hidden rounded-full border-4 border-white shadow-soft">
                     <Image
                         src = "/photome.jpg"
                         alt = "Kamilla Mamatova"
