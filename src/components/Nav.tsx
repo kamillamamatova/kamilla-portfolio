@@ -19,7 +19,7 @@ export default function Nav(){
                         Kamilla Mamatova
                         <span className = "absolute -bottom-1 left-0 h-[2px] w-0 bg-petal transition-all group-hover:w-full" />
                     </span>
-                    <span className = "text-ink/60 text-sm font-medium"> SWE & AI</span>
+                    <span className = "text-ink/60 text-sm font-medium"> SWE</span>
                 </Link>
 
                 <nav aria-label = "Primary">
