@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { Github, Linkedin } from "lucide-react";
 
 export default function Footer(){
     const [isVisible, setIsVisible] = useState(false);
@@ -34,9 +35,28 @@ export default function Footer(){
         <footer className = "border-t border-ink/10 mt-20">
             <div className = "mx-auto flex max-w-5xl flex-col items-center gap-4 px-5 py-8 text-center text-sm text-ink/60 md:flex-row md:items-left md:justify-between">
                 <p>© {new Date().getFullYear()} Kamilla Mamatova</p>
-                <p className = "text-ink/60">
-                    Built with Next.js & Tailwind & deployed on Vercel
-                </p>
+                
+
+                <div className = "flex items-center gap-6">
+                    <a
+                        href = "https://github.com/kamillamamatova"
+                        target = "_blank"
+                        rel = "noopener noreferrer"
+                        className = "transition hover:text-ink hover:scale-110"
+                        aria-label = "GitHub"
+                    >
+                        <Github size = {20} />
+                    </a>
+                    <a
+                        href = "https://www.linkedin.com/in/kamilla-mamatova/"
+                        target = "_blank"
+                        rel = "noopener noreferrer"
+                        className = "transition hover:text-ink hover:scale-110"
+                        aria-label = "LinkedIn"
+                    >
+                        <Linkedin size = {20} />
+                    </a>
+                </div>
 
                 <p className = "font-serif italic text-ink/50">
                     Thanks for dropping by!
