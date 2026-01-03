@@ -21,6 +21,26 @@ export default function AboutPage(){
                 </div>
             </div>
 
+            {/* Stats */}
+            <section className = "grid grid-cols-2 gap-4 md:grid-cols-4">
+                {[
+                    { label: "GPA", value: "3.6" },
+                    { label: "Projects", value: "5+" },
+                    { label: "LeetCode Solved", value: "39"},
+                    { label: "Hackathons", value: "1" },
+                ].map((stat) => (
+                    <div
+                        key = {stat.label}
+                        className = "flex flex-col items-center justify-center rounded-2xl border border-ink/10 bg-petal/50 p-2 text-center shadow-sm transiton hover:scale-105 hover:bg-peony"
+                    >
+                        <span className = "text-2xl font-bold text-ink">{stat.value}</span>
+                        <span className = "text-xs font-medium uppercase tracking-wider text-ink/50">
+                            {stat.label}
+                        </span>
+                    </div>
+                ))}
+            </section>
+
             <section className = "rounded-3xl border border-ink/10 bg-canvas/60 backdrop-blur-sm p-6 shadow-soft">
                 <h2 className = "text-base font-semibold">What I care about</h2>
                 <div className = "mt-4 space-y-3 text-sm leading-relaxed text-ink/75">
