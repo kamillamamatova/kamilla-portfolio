@@ -18,7 +18,7 @@ export const projects: Project[] = [
             //{ label: "Live", href: "https://"},
             { label: "Code", href: "https://github.com/kamillamamatova/rocket-time"},
         ],
-        highlights: ["Role: Backend"],
+        highlights: ["Role: Backend Developer"],
     },
     {
         title: "AI Resume Analyzer",
@@ -31,16 +31,6 @@ export const projects: Project[] = [
         highlights: ["Role: Solo Developer"],
     },
     {
-        title: "Mitsy's Print",
-        description: "Misty’s Prints is a PC story-driven, puzzle-based RPG where the user plays as a girl named Aribel as she follows Misty, her cat, into a seemingly abandoned library. The uniqueness of this game lies in the multiple small yet distinct stories she finds herself in as she searches for her cat, allowing the player to experience multiple genres (mystery, adventure, etc.) all within one cohesive experience.",
-        tags: ["GamerMaker Studio 2", "GML", "Git"],
-        links: [
-            //{ label: "Live", href: "https://ai-resume-analyzer-c9chdla4qiz6633ikqjdyd.streamlit.app/"},
-            { label: "Code", href: "https://github.com/kamillamamatova/mitsys-print"},
-        ],
-        highlights: ["Role: Game Settings & Systems Integration"],
-    },
-    {
         title: "Job Market Insights",
         description: "Job Market Insights is a responsive web application built with React and Tailwind CSS that allows users to search for job listings in real-time. It fetches data from the JSearch API to provide up-to-date information, allowing users to filter by role, location, job type, and remote work options.",
         tags: ["JavaScript", "React", "Axios", "Tailwind CSS", "HTML5", "RapidAPI"],
@@ -49,6 +39,16 @@ export const projects: Project[] = [
             { label: "Code", href: "https://github.com/kamillamamatova/job-market-insights"},
         ],
         highlights: ["Role: Solo Developer"],
+    },
+    {
+        title: "Mitsy's Print",
+        description: "Misty’s Prints is a PC story-driven, puzzle-based RPG where the user plays as a girl named Aribel as she follows Misty, her cat, into a seemingly abandoned library. The uniqueness of this game lies in the multiple small yet distinct stories she finds herself in as she searches for her cat, allowing the player to experience multiple genres (mystery, adventure, etc.) all within one cohesive experience.",
+        tags: ["GamerMaker Studio 2", "GML", "Git"],
+        links: [
+            //{ label: "Live", href: "https://ai-resume-analyzer-c9chdla4qiz6633ikqjdyd.streamlit.app/"},
+            { label: "Code", href: "https://github.com/kamillamamatova/mitsys-print"},
+        ],
+        highlights: ["Role: Game Settings & Systems Integration"],
     },
     {
         title: "FocusUp",
