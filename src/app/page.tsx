@@ -11,11 +11,11 @@ export default function HomePage(){
         </div>
 
         <h1 className = "text-3xl font-serif tracking-tight md:text-5xl">
-          I build clean, accessible products and I like making the details feel calm.
+          I build software with an emphasis on clarity, usability, and maintainable code.
         </h1>
 
         <p className = "max-w-2xl text-base leading-relaxed text-ink/80 md:text-lg">
-          I’m a Computer Science junior interested in Software Engineering.
+          I’m a Computer Science junior focused on Software Engineering.
           I care about readable code, thoughtful UX, and shipping work that holds up in the real world.
         </p>
 
@@ -37,7 +37,7 @@ export default function HomePage(){
           <a
             href = "https://github.com/kamillamamatova"
             target = "_blank"
-            rel = "norefferrer"
+            rel = "noopener noreferrer"
             className = "text-sm text-ink/80 underline decoration-petal decoration-2 underline-offset-4 hover:decoration-wavy focus:outline-none focus:ring-2 focus:ring-blush"
           >
             GitHub
@@ -46,7 +46,7 @@ export default function HomePage(){
           <a 
             href = "https://www.linkedin.com/in/kamilla-mamatova/"
             target = "_blank"
-            rel = "norefferrer"
+            rel = "noopener noreferrer"
             className = "text-sm text-ink/80 underline decoration-petal decoration-2 underline-offset-4 hover:decoration-wavy focus:outline-none focus:ring-2 focus:ring-blush"
             >
               LinkedIn
@@ -55,7 +55,7 @@ export default function HomePage(){
           <a
             href = "/resume.pdf"
             target = "_blank"
-            rel = "norefferrer"
+            rel = "noopener noreferrer"
             className = "text-sm text-ink/80 underline decoration-petal decoration-2 underline-offset-4 hover:decoration-wavy focus:outline-none focus:ring-2 focus:ring-blush"
           >
             Resume
@@ -66,17 +66,17 @@ export default function HomePage(){
       <section className="grid gap-4 md:grid-cols-3">
         {[
           {
-            title: "Engineering first",
-            body: "TypeScript, testing where it matters, and code that’s easy to own after the first demo.",
+            title: "Building real things",
+            body: "I work on projects that go beyond demos, handling data, logic, and edge cases, not just the UI.",
           },
           {
-            title: "Accessibility always",
-            body: "Keyboard support, contrast, semantics, and calm UIs that don’t fight the user.",
+            title: "How I approach code",
+            body: "I try to write code that’s easy to read later, think through tradeoffs, and avoid over engineering.",
           },
-          /*{
-            title: "AI with purpose",
-            body: "Applied ML/LLM work that’s measurable, not vague hype.",
-          },*/
+          {
+            title: "Details that matter",
+            body: "I care about things like naming, structure, and basic accessibility so the end result feels solid to use.",
+          },
         ].map((c) => (
           <div
             key={c.title}
