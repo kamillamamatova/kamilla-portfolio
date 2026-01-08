@@ -12,52 +12,72 @@ export type Project = {
 export const projects: Project[] = [
     {
         title: "RocketTime",
-        description: "A full-stack time management and goal-setting application featuring a React dashboard, a Node.js API with Google OAuth, and an AI-powered chat assistant for managing tasks and time logs.",
+        description: "A full-stack time management application with a React dashboard, a Node.js API, and Google OAuth authentication. Built to support task tracking, goal-setting, and time logging with a focus on API design and backend reliability.",
         tags: ["TypeScript", "Node.js", "React", "MySQL2", "Google OAuth", "Express", "Google APIs", "Vite"],
         links: [
             //{ label: "Live", href: "https://"},
             { label: "Code", href: "https://github.com/kamillamamatova/rocket-time"},
         ],
-        highlights: ["Role: Backend Developer"],
+        highlights: [
+            "Designed and implemented backend APIs",
+            "Integrated OAuth authentication",
+            "Database schema and data flow decisions",
+        ],
     },
     {
         title: "AI Resume Analyzer",
-        description: "Users upload their resume and AI analyzes it and gives feedback on what they can improve.",
+        description: "A resume analysis tool that uses AI to generate structured feedback on content, clarity, and formatting. Handles file parsing, text extraction, and prompt-driven evaluation through an interactive web interface.",
         tags: ["Python", "Streamlit", "OpenAI API", "PyPDF2", "Pandas", "NumPy", "Matplotlib", "Altair", "Pillow"],
         links: [
             { label: "Live", href: "https://ai-resume-analyzer-c9chdla4qiz6633ikqjdyd.streamlit.app/"},
             { label: "Code", href: "https://github.com/kamillamamatova/ai-resume-analyzer"},
         ],
-        highlights: ["Role: Solo Developer"],
+        highlights: [
+            "End-to-end ownership (design, implementation, deployment)",
+            "AI prompt design and response handling",
+            "Resume parsing and data preprocessing",
+        ],
     },
     {
         title: "Job Market Insights",
-        description: "Job Market Insights is a responsive web application built with React and Tailwind CSS that allows users to search for job listings in real-time. It fetches data from the JSearch API to provide up-to-date information, allowing users to filter by role, location, job type, and remote work options.",
+        description: "A responsive job search web application that fetches real-time listings from an external API and supports filtering by role, location, job type, and remote options.",
         tags: ["JavaScript", "React", "Axios", "Tailwind CSS", "HTML5", "RapidAPI"],
         links: [
             { label: "Live", href: "https://job-market-insights.vercel.app/"},
             { label: "Code", href: "https://github.com/kamillamamatova/job-market-insights"},
         ],
-        highlights: ["Role: Solo Developer"],
+        highlights: [
+            "API integration and client-side data handling",
+            "Filtering and state management",
+            "Responsive UI design",
+        ],
     },
     {
         title: "Mitsy's Print",
-        description: "Misty’s Prints is a PC story-driven, puzzle-based RPG where the user plays as a girl named Aribel as she follows Misty, her cat, into a seemingly abandoned library. The uniqueness of this game lies in the multiple small yet distinct stories she finds herself in as she searches for her cat, allowing the player to experience multiple genres (mystery, adventure, etc.) all within one cohesive experience.",
+        description: "A PC-based, story-driven puzzle RPG built in GameMaker Studio 2. Focused on narrative systems, game state management, and branching story logic within a cohesive gameplay experience.",
         tags: ["GamerMaker Studio 2", "GML", "Git"],
         links: [
             //{ label: "Live", href: "https://ai-resume-analyzer-c9chdla4qiz6633ikqjdyd.streamlit.app/"},
             { label: "Code", href: "https://github.com/kamillamamatova/mitsys-print"},
         ],
-        highlights: ["Role: Game Settings & Systems Integration"],
+        highlights: [
+            "Game state and story system implementation",
+            "Logic for puzzles and progression",
+            "Systems integration across scenes and mechanics",
+        ],
     },
     {
         title: "FocusUp",
-        description: "A simple, embeddable timer for students and makers: count up to your daily goal, log sessions, and keep streaks alive. Designed for students, developers, and makers who want accountability inside Notion or the browser.",
+        description: "A lightweight, embeddable timer designed for tracking focus sessions, daily goals, and streaks. Built to be simple, fast, and easy to integrate into browsers or productivity tools.",
         tags: ["HTML", "CSS", "Axios", "Tailwind CSS", "HTML5", "RapidAPI"],
         links: [
             //{ label: "Live", href: "https://job-market-insights.vercel.app/"},
             { label: "Code", href: "https://github.com/kamillamamatova/focusup"},
         ],
-        highlights: ["Role: Solo Developer"],
+        highlights: [
+            "Lightweight UI and interaction logic",
+            "Session tracking and state persistence",
+            "Designed for embeddability and simplicity",
+        ],
     },
 ];
