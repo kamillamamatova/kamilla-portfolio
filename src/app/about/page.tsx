@@ -6,12 +6,12 @@ export default function AboutPage(){
             <header className = "space-y-3">
                 <h1 className = "text-3xl font-semibold tracking-tight">About me</h1>
                 <p className = "max-w-2xl text-ink/80">
-                    I'm Kamilla, a junior Computer Science student passionate about SWE...
+                    I'm Kamilla, a junior Computer Science student passionate about SWE.
                 </p>
             </header>
 
-            <div className = "mb-8 flex justify-center md: justify-start">
-                <div className = "relative h-65 w-65 overflow-hidden rounded-full border-4 border-white shadow-soft">
+            {/*<div className = "mb-8 flex justify-center md:justify-start">
+                <div className = "relative h-64 w-64 overflow-hidden rounded-full border-4 border-white shadow-soft">
                     <Image
                         src = "/photome.jpg"
                         alt = "Kamilla Mamatova"
@@ -19,19 +19,19 @@ export default function AboutPage(){
                         className = "object-cover"
                     />
                 </div>
-            </div>
+            </div>*/}
 
             {/* Stats */}
             <section className = "grid grid-cols-2 gap-4 md:grid-cols-4">
                 {[
                     { label: "GPA", value: "3.6" },
                     { label: "Projects", value: "5+" },
-                    { label: "LeetCode Solved", value: "39"},
-                    { label: "Hackathons", value: "1" },
+                    { label: "LeetCode Solved", value: "54"},
+                    { label: "Hackathon", value: "1" },
                 ].map((stat) => (
                     <div
                         key = {stat.label}
-                        className = "flex flex-col items-center justify-center rounded-2xl border border-ink/10 bg-petal/50 p-2 text-center shadow-sm transiton hover:scale-105 hover:bg-peony"
+                        className = "flex flex-col items-center justify-center rounded-2xl border border-ink/10 bg-petal/50 p-2 text-center shadow-sm transition hover:scale-105 hover:bg-peony"
                     >
                         <span className = "text-2xl font-bold text-ink">{stat.value}</span>
                         <span className = "text-xs font-medium uppercase tracking-wider text-ink/50">
@@ -45,15 +45,30 @@ export default function AboutPage(){
                 <h2 className = "text-base font-semibold">What I care about</h2>
                 <div className = "mt-4 space-y-3 text-sm leading-relaxed text-ink/75">
                     <p>
-                        I value clarity: code that’s easy to read, UIs that don’t overwhelm, and projects that
-                        explain themselves quickly.
+                        I care about clarity, code that’s easy to follow a week later, and interfaces that don’t make the user work harder than they have to.
                     </p>
                     <p>
-                        Stuff
+                        I like building things that hold up past the demo: solid data flow, sensible structure, and small details that prevent annoying bugs.
                     </p>
                     <p>
-                        On the AI side, ...
+                        On the AI side, I’m interested in practical uses, using models as a tool inside an app (with good prompts, guardrails, and predictable output).
                     </p>
+                </div>
+            </section>
+
+            <section className = "space-y-2">
+                <h2 className = "text-base font-semibold font-serif">Tech Stack</h2>
+                <div className = "flex flex-wrap gap-2">
+                    {["Python", "Java", "C", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS", "Git", 
+                    "SQL", "Figma", "GameMaker Studio", "PyTorch", "Vercel", "Node.js", "NumPy", "Pandas",
+                     "Plotly", "Matplotlib"].map((tech) => (
+                        <span
+                            key = {tech}
+                            className = "rounded-full bg-petal/50 px-3 py-1 text-xs text-ink/75 shadow-sm border border-ink/5"
+                        >
+                            {tech}
+                        </span>
+                    ))}
                 </div>
             </section>
 
@@ -90,7 +105,7 @@ export default function AboutPage(){
                         </span>
                         <h3 className="font-semibold text-ink">KnightHacks Hackathon 2025</h3>
                         <p className="mt-1 text-sm text-ink/75">
-                            Contributed to building a "RocketTime" in 36 hours, a productivity app helping users identify wasted time.
+                            Contributed to building RocketTime in 36 hours, a productivity app helping users identify wasted time.
                         </p>
                     </div>
 
@@ -164,24 +179,8 @@ export default function AboutPage(){
                 <div className = "rounded-3xl border border-ink/10 bg-canvas/60 backdrop-blur-sm p-6 shadow-soft">
                     <h2 className = "text-base font-semibold">Outside of class</h2>
                     <p className = "mt-2 text-sm text-ink/75">
-                        I don't know
+                        I’m interested in philosophy (ethics, meaning, human behavior), long walks for reflection, and building playlists for every possible mood.
                     </p>
-                </div>
-            </section>
-
-            <section className = "spcae-y-2">
-                <h2 className = "text-base font-semibold font-serif">Tech Stack</h2>
-                <div className = "flex flex-wrap gap-2">
-                    {["Python", "Java", "C", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS", "Git", 
-                    "SQL", "Figma", "GameMaker Studio", "PyTorch", "Vercel", "Next", "Node.js", "NumPy", "Pandas",
-                     "Plotly", "MatPlotlib"].map((tech) => (
-                        <span
-                            key = {tech}
-                            className = "rounded-full bg-petal/50 px-3 py-1 text-xs text-ink/75 shadow-sm border border-ink/5"
-                        >
-                            {tech}
-                        </span>
-                    ))}
                 </div>
             </section>
 
@@ -200,7 +199,7 @@ export default function AboutPage(){
                         "Object-Oriented Programming",
                     ].map((course) => (
                         <li key = {course} className = "flex items-center gap-2">
-                            <span className = "h-1.5 w-1.5 roudned-full bg-petal/60" />
+                            <span className = "h-1.5 w-1.5 rounded-full bg-petal/60" />
                             {course}
                         </li>
                     ))}
