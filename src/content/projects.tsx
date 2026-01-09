@@ -7,6 +7,7 @@ export type Project = {
         href: string;
     }[];
     highlights?: string[];
+    images: string[];
 };
 
 export const projects: Project[] = [
@@ -23,6 +24,14 @@ export const projects: Project[] = [
             "Integrated OAuth authentication",
             "Database schema and data flow decisions",
         ],
+        images: [
+            "/rocket-time-login-ss.png",
+            "/rockettime dashboard.png",
+            "/rocket-time-transaction-ss.png",
+            "/rocket-time-time-spent-ss.png",
+            "/rocket-time-ai-chat-ss.png",
+            "/rocket-time-google-calendar-ss.png",
+        ]
     },
     {
         title: "AI Resume Analyzer",
@@ -37,6 +46,14 @@ export const projects: Project[] = [
             "AI prompt design and response handling",
             "Resume parsing and data preprocessing",
         ],
+        images: [
+            "/ai-resume-analyzer-dashboard.png",
+            "/ai-resume-analyzer-ai-feedback1.png",
+            "/ai-resume-analyzer-score-breakdown1.png",
+            "/ai-resume-analyzer-graphs1.png",
+            "/ai-resume-analyzer-feedback1.png",
+            "/ai-resume-analyzer-download-proof1.png",
+        ]
     },
     {
         title: "Job Market Insights",
@@ -51,6 +68,11 @@ export const projects: Project[] = [
             "Filtering and state management",
             "Responsive UI design",
         ],
+        images: [
+            "/job-market-insights-dashboard-new.png",
+            "/job-market-insights-link-new.png",
+            //"/job-market-insights-link.png",
+        ]
     },
     {
         title: "Mitsy's Print",
@@ -65,6 +87,25 @@ export const projects: Project[] = [
             "Logic for puzzles and progression",
             "Systems integration across scenes and mechanics",
         ],
+        images: [
+            "/mitsyprint1.png",
+            "/mitsyprint2.png",
+            "/mitsyprint3.png",
+            "/mitsyprint3.5.png",
+            "/mitsyprint4.png",
+            "/mitsyprint5.png",
+            "/mitsyprint6.png",
+            "/mitsyprint7.png",
+            "/mitsyprint8.png",
+            //"/mitsyprint9.png",
+            "/mitsyprint10.png",
+            "/mitsyprint11.png",
+            "/mitsyprint12.png",
+            "/mitsyprint13.png",
+            "/mitsyprint14.png",
+            "/mitsyprint15.png",
+            "/mitsyprint16.png",
+        ]
     },
     {
         title: "FocusUp",
@@ -79,5 +120,8 @@ export const projects: Project[] = [
             "Session tracking and state persistence",
             "Designed for embeddability and simplicity",
         ],
+        images: [
+            
+        ]
     },
 ];
