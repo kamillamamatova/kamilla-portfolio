@@ -37,7 +37,7 @@ export default function ContactPage(){
                 </button>
 
                 <a 
-                    href = "/resume.pdf"
+                    href = "/Kamilla Mamatova Resume final.pdf"
                     target = "_blank"
                     rel="noreferrer"
                     className="group flex flex-col items-center gap-3 rounded-2xl border border-ink/10 bg-canvas p-6 text-center shadow-soft transition hover:border-petal/50 hover:bg-white"

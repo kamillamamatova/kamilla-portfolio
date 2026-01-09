@@ -53,7 +53,7 @@ export default function HomePage(){
           </a>
 
           <a
-            href = "/resume.pdf"
+            href = "/Kamilla Mamatova Resume final.pdf"
             target = "_blank"
             rel = "noopener noreferrer"
             className = "text-sm text-ink/80 underline decoration-petal decoration-2 underline-offset-4 hover:decoration-wavy focus:outline-none focus:ring-2 focus:ring-blush"
