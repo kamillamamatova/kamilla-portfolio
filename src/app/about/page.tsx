@@ -186,7 +186,7 @@ export default function AboutPage(){
 
             <section className = "space-y-3">
                 <h2 className = "text-base font-semibold font-serif">Course Work</h2>
-                <ul className = "grid grid-cols-2 gap-2 text-sm text-ink/75 sm:grid-cols-3">
+                <ul className = "grid grid-cols-2 gap-2 text-sm text-ink/88 sm:grid-cols-3">
                     {[
                         "Computer Science I & II",
                         "Calculus w/ Analytical Geometry I & II",
