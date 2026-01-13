@@ -26,7 +26,7 @@ export default function AboutPage(){
                 {[
                     { label: "GPA", value: "3.6" },
                     { label: "Projects", value: "5+" },
-                    { label: "LeetCode Solved", value: "54"},
+                    { label: "LeetCode Solved", value: "64"},
                     { label: "Hackathon", value: "1" },
                 ].map((stat) => (
                     <div

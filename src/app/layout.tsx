@@ -11,6 +11,10 @@ export const metadata: Metadata = {
   title: "Kamilla Mamatova — Software Engineering",
   description: "Junior CS student focused on Software Engineering",
 
+  icons: {
+    icon: "/icon.png",
+  },
+
   openGraph: {
     title: "Kamilla Mamatova",
     description: "Junior CS student focused on Software Engineering",
