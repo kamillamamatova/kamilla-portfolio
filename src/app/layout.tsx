@@ -3,6 +3,7 @@ import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { Inter, Playfair_Display } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 
 const sans = Inter({subsets: ["latin"], variable: "--font-sans"});
 const serif = Playfair_Display({subsets: ["latin"], variable: "--font-serif"});
@@ -47,6 +48,8 @@ export default function RootLayout({
           </main>
           <Footer />
         </div>
+
+        <Analytics />
       </body>
     </html>
   );
