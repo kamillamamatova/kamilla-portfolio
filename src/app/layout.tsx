@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description: "Junior CS student focused on Software Engineering",
 
   icons: {
-    icon: "/icon.png",
+    icon: "/icon1.png",
   },
 
   openGraph: {
