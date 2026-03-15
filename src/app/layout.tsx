@@ -13,7 +13,12 @@ export const metadata: Metadata = {
   description: "Junior CS student focused on Software Engineering",
 
   icons: {
-    icon: "/icon1.png",
+    icon: [
+      { url: "/icon4.png", sizes: "32x32", type: "image/png" },
+      { url: "/icon4.png", sizes: "192x192", type: "image/png" },
+    ],
+    apple: "/icon4.png",
+    shortcut: "/icon4.png",
   },
 
   openGraph: {
