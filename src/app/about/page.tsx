@@ -83,7 +83,7 @@ export default function AboutPage(){
                         </span>
                         <h3 className = "font-semibold text-ink">Building & Learning</h3>
                         <p className = "mt-1 text-sm text-ink/75">
-                            Developing this portfolio, practicing LeetCode, and exploring new frameworks.
+                            Developing a job tracker, practicing LeetCode, and exploring new frameworks.
                         </p>
                     </div>
 
