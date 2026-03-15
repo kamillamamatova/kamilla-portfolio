@@ -60,7 +60,7 @@ export default function AboutPage(){
                 <h2 className = "text-base font-semibold font-serif">Tech Stack</h2>
                 <div className = "flex flex-wrap gap-2">
                     {["Python", "Java", "C", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS", "Git", 
-                    "SQL", "Figma", "GameMaker Studio", "PyTorch", "Vercel", "Node.js", "NumPy", "Pandas",
+                    "SQL", "Figma", "GameMaker Studio", "PyTorch", "Vercel", "Express", "Node.js", "Next.js", "NumPy", "Pandas",
                      "Plotly", "Matplotlib"].map((tech) => (
                         <span
                             key = {tech}
