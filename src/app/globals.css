@@ -22,7 +22,7 @@ body{
 }
 
 .background-canvas{
-  opacity: 0.95;
+  opacity: 1;
 }
 
 .background-orb{
@@ -30,7 +30,7 @@ body{
   border-radius: 9999px;
   filter: blur(18px);
   transform: translate3d(0, 0, 0);
-  animation: float-orb 18s ease-in-out infinite;
+  animation: float-orb 14s ease-in-out infinite;
 }
 
 .background-orb-primary{
@@ -40,6 +40,7 @@ body{
   width: 34rem;
   background:
     radial-gradient(circle at 30% 30%, rgb(249 168 187 / 0.55), rgb(244 201 214 / 0.28) 42%, transparent 72%);
+  animation-duration: 12s;
 }
 
 .background-orb-secondary{
@@ -49,7 +50,7 @@ body{
   width: 28rem;
   background:
     radial-gradient(circle at 50% 50%, rgb(227 104 135 / 0.2), rgb(249 168 187 / 0.16) 48%, transparent 72%);
-  animation-duration: 22s;
+  animation-duration: 16s;
   animation-delay: -6s;
 }
 
@@ -59,31 +60,9 @@ body{
   height: 18rem;
   width: 18rem;
   background:
-    radial-gradient(circle at 40% 40%, rgb(244 201 214 / 0.24), transparent 70%);
-  animation-duration: 16s;
+    radial-gradient(circle at 40% 40%, rgb(244 201 214 / 0.32), transparent 70%);
+  animation-duration: 10s;
   animation-delay: -10s;
-}
-
-.background-ring{
-  position: absolute;
-  top: 6rem;
-  right: 4rem;
-  height: 26rem;
-  width: 26rem;
-  border: 1px solid rgb(227 104 135 / 0.16);
-  border-radius: 9999px;
-  opacity: 0.9;
-  transform: rotate(-16deg);
-}
-
-.background-ring-secondary{
-  top: 10rem;
-  right: 10rem;
-  height: 18rem;
-  width: 18rem;
-  border-color: rgb(249 168 187 / 0.24);
-  opacity: 0.7;
-  transform: rotate(18deg);
 }
 
 .background-aurora{
@@ -94,17 +73,43 @@ body{
     radial-gradient(circle at 84% 20%, rgb(244 201 214 / 0.18), transparent 14%),
     radial-gradient(circle at 16% 74%, rgb(227 104 135 / 0.14), transparent 20%),
     linear-gradient(135deg, rgb(255 255 255 / 0.2), transparent 38%);
+  animation: breathe-aurora 12s ease-in-out infinite;
+}
+
+.background-veil{
+  position: absolute;
+  inset: -10% -20%;
+  background:
+    linear-gradient(115deg, transparent 20%, rgb(249 168 187 / 0.14) 42%, rgb(244 201 214 / 0.2) 52%, transparent 72%);
+  filter: blur(28px);
+  opacity: 0.9;
+  transform: translate3d(0, 0, 0);
+  animation: sweep-veil 14s ease-in-out infinite;
+}
+
+.background-pulse{
+  position: absolute;
+  top: 24%;
+  right: 10%;
+  height: 24rem;
+  width: 24rem;
+  border-radius: 9999px;
+  background:
+    radial-gradient(circle, rgb(249 168 187 / 0.24), rgb(244 201 214 / 0.08) 45%, transparent 70%);
+  filter: blur(14px);
+  animation: pulse-glow 9s ease-in-out infinite;
 }
 
 .background-grid{
   position: absolute;
   inset: 0;
-  opacity: 0.26;
+  opacity: 0.18;
   background-image:
-    linear-gradient(rgb(62 39 35 / 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgb(62 39 35 / 0.05) 1px, transparent 1px);
-  background-size: 56px 56px;
+    linear-gradient(rgb(62 39 35 / 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(62 39 35 / 0.035) 1px, transparent 1px);
+  background-size: 64px 64px;
   mask-image: radial-gradient(circle at center, black, transparent 92%);
+  animation: drift-grid 26s linear infinite;
 }
 
 .background-noise{
@@ -123,12 +128,69 @@ body{
   }
 
   50%{
-    transform: translate3d(0, -18px, 0) scale(1.04);
+    transform: translate3d(0, -28px, 0) scale(1.08);
+  }
+}
+
+@keyframes breathe-aurora{
+  0%, 100%{
+    opacity: 0.85;
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+
+  50%{
+    opacity: 1;
+    transform: scale(1.06) translate3d(1.5%, -1.5%, 0);
+  }
+}
+
+@keyframes sweep-veil{
+  0%, 100%{
+    transform: translate3d(-8%, -2%, 0) rotate(-8deg) scale(1);
+    opacity: 0.72;
+  }
+
+  50%{
+    transform: translate3d(10%, 4%, 0) rotate(-2deg) scale(1.04);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse-glow{
+  0%, 100%{
+    transform: scale(0.92);
+    opacity: 0.45;
+  }
+
+  50%{
+    transform: scale(1.16);
+    opacity: 0.9;
+  }
+}
+
+@keyframes drift-grid{
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+
+  50%{
+    transform: translate3d(-18px, 14px, 0);
+  }
+
+  100%{
+    transform: translate3d(-36px, 28px, 0);
   }
 }
 
 @media (prefers-reduced-motion: reduce){
   .background-orb{
+    animation: none;
+  }
+
+  .background-aurora,
+  .background-veil,
+  .background-pulse,
+  .background-grid{
     animation: none;
   }
 }

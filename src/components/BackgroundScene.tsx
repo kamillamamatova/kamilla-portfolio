@@ -61,7 +61,7 @@ export default function BackgroundScene() {
     camera.position.z = 16;
 
     const cluster = new THREE.Group();
-    cluster.position.set(4.6, 1.5, -4);
+    cluster.position.set(3.4, 0.6, -3.5);
     scene.add(cluster);
 
     const particleCount = window.innerWidth < 768 ? 100 : 180;
@@ -84,42 +84,45 @@ export default function BackgroundScene() {
       particleGeometry,
       new THREE.PointsMaterial({
         color: "#d9809c",
-        size: 0.085,
+        size: 0.11,
         transparent: true,
-        opacity: 0.38,
+        opacity: 0.45,
       })
     );
     cluster.add(particles);
 
-    const ringGeometry = new THREE.TorusGeometry(2.9, 0.035, 24, 220);
-    const ringMaterial = new THREE.MeshBasicMaterial({
-      color: "#efb5c8",
-      transparent: true,
-      opacity: 0.16,
-    });
-
-    const ringOne = new THREE.Mesh(ringGeometry, ringMaterial);
-    ringOne.rotation.x = 1.08;
-    ringOne.rotation.y = 0.28;
-    cluster.add(ringOne);
-
-    const ringTwo = new THREE.Mesh(ringGeometry, ringMaterial.clone());
-    ringTwo.material.opacity = 0.11;
-    ringTwo.rotation.x = 0.28;
-    ringTwo.rotation.y = -0.52;
-    ringTwo.scale.setScalar(0.78);
-    cluster.add(ringTwo);
+    const mist = new THREE.Points(
+      particleGeometry.clone(),
+      new THREE.PointsMaterial({
+        color: "#f4c9d6",
+        size: 0.07,
+        transparent: true,
+        opacity: 0.22,
+      })
+    );
+    mist.scale.setScalar(1.45);
+    cluster.add(mist);
 
     const core = new THREE.Mesh(
-      new THREE.IcosahedronGeometry(1.1, 8),
+      new THREE.IcosahedronGeometry(1.35, 10),
       new THREE.MeshBasicMaterial({
         color: "#f5d3de",
         wireframe: true,
         transparent: true,
-        opacity: 0.13,
+        opacity: 0.2,
       })
     );
     cluster.add(core);
+
+    const shell = new THREE.Mesh(
+      new THREE.SphereGeometry(1.8, 32, 32),
+      new THREE.MeshBasicMaterial({
+        color: "#efb5c8",
+        transparent: true,
+        opacity: 0.06,
+      })
+    );
+    cluster.add(shell);
 
     const accent = new THREE.Mesh(
       new THREE.IcosahedronGeometry(0.48, 2),
@@ -131,6 +134,17 @@ export default function BackgroundScene() {
     );
     accent.position.set(-2.1, -1.5, 0.4);
     cluster.add(accent);
+
+    const accentTwo = new THREE.Mesh(
+      new THREE.IcosahedronGeometry(0.38, 1),
+      new THREE.MeshBasicMaterial({
+        color: "#e36887",
+        transparent: true,
+        opacity: 0.16,
+      })
+    );
+    accentTwo.position.set(2.25, 1.8, -0.2);
+    cluster.add(accentTwo);
 
     const halo = new THREE.Mesh(
       new THREE.SphereGeometry(1.65, 32, 32),
@@ -166,18 +180,25 @@ export default function BackgroundScene() {
       const elapsed = clock.getElapsedTime();
 
       cluster.rotation.y = elapsed * 0.1;
-      cluster.rotation.x = Math.sin(elapsed * 0.26) * 0.08;
-      cluster.position.x = 4.6 + pointerX * 0.38;
+      cluster.rotation.x = Math.sin(elapsed * 0.34) * 0.16;
+      cluster.rotation.z = Math.sin(elapsed * 0.22) * 0.08;
+      cluster.position.x = 3.4 + pointerX * 0.9 + Math.cos(elapsed * 0.42) * 0.2;
       cluster.position.y =
-        1.5 - pointerY * 0.22 + Math.sin(elapsed * 0.5) * 0.24;
+        0.6 - pointerY * 0.45 + Math.sin(elapsed * 0.7) * 0.45;
 
-      particles.rotation.y = -elapsed * 0.04;
-      ringOne.rotation.z = elapsed * 0.15;
-      ringTwo.rotation.z = -elapsed * 0.11;
-      core.rotation.x = elapsed * 0.16;
-      core.rotation.y = elapsed * 0.15;
-      halo.scale.setScalar(1 + Math.sin(elapsed * 0.85) * 0.04);
+      particles.rotation.y = -elapsed * 0.16;
+      particles.rotation.x = Math.sin(elapsed * 0.35) * 0.22;
+      mist.rotation.y = elapsed * 0.1;
+      mist.rotation.z = Math.sin(elapsed * 0.28) * 0.18;
+      core.rotation.x = elapsed * 0.42;
+      core.rotation.y = elapsed * 0.34;
+      shell.scale.setScalar(1 + Math.sin(elapsed * 0.95) * 0.07);
+      shell.rotation.y = -elapsed * 0.12;
+      halo.scale.setScalar(1 + Math.sin(elapsed * 1.1) * 0.08);
       accent.position.y = -1.5 + Math.sin(elapsed * 1.15) * 0.26;
+      accent.position.x = -2.1 + Math.cos(elapsed * 0.9) * 0.22;
+      accentTwo.position.y = 1.8 + Math.sin(elapsed * 1.35) * 0.34;
+      accentTwo.position.x = 2.25 + Math.cos(elapsed * 0.8) * 0.18;
 
       renderer.render(scene, camera);
     });
@@ -187,15 +208,18 @@ export default function BackgroundScene() {
       window.removeEventListener("resize", handleResize);
       renderer.setAnimationLoop(null);
       particleGeometry.dispose();
-      ringGeometry.dispose();
+      mist.geometry.dispose();
       core.geometry.dispose();
+      shell.geometry.dispose();
       accent.geometry.dispose();
+      accentTwo.geometry.dispose();
       halo.geometry.dispose();
       (particles.material as { dispose: () => void }).dispose();
-      ringMaterial.dispose();
-      ringTwo.material.dispose();
+      (mist.material as { dispose: () => void }).dispose();
       (core.material as { dispose: () => void }).dispose();
+      (shell.material as { dispose: () => void }).dispose();
       (accent.material as { dispose: () => void }).dispose();
+      (accentTwo.material as { dispose: () => void }).dispose();
       (halo.material as { dispose: () => void }).dispose();
       renderer.dispose();
     };
@@ -210,9 +234,9 @@ export default function BackgroundScene() {
       <div className="background-orb background-orb-primary" />
       <div className="background-orb background-orb-secondary" />
       <div className="background-orb background-orb-tertiary" />
-      <div className="background-ring" />
-      <div className="background-ring background-ring-secondary" />
       <div className="background-aurora" />
+      <div className="background-veil" />
+      <div className="background-pulse" />
       <div className="background-grid" />
       <div className="background-noise" />
     </div>
