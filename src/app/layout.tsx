@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import BackgroundScene from "@/components/BackgroundScene";
 import { Inter, Playfair_Display } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 
@@ -39,6 +40,8 @@ export default function RootLayout({
   return (
     <html lang="en" className = {`${sans.variable} ${serif.variable} scroll-smooth"`}>
       <body>
+        <BackgroundScene />
+
         <a
           href = "#main"
           className = "sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:rounded-md focus:bg-canvas focus:px-4 focus:py-2 focus:shadow-soft focus:outline-none focus:ring-2 focus:ring-blush"
@@ -46,7 +49,7 @@ export default function RootLayout({
           Skip to content
         </a>
 
-        <div className = "min-h-dvh">
+        <div className = "relative z-10 min-h-dvh">
           <Nav />
           <main id = "main" className = "mx-auto w-full max-w-5xl px-5 py-10">
             {children}
