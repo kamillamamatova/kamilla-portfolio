@@ -8,20 +8,30 @@ export default function Footer(){
 
     useEffect(() => {
         const toggleVisibility = () => {
-            // Only shows the back to top button when the user has scrolled down 100px
-            if(window.scrollY > 100){
-                setIsVisible(true);
+            const nextVisible = window.scrollY > 100;
+            setIsVisible((prev) => (prev === nextVisible ? prev : nextVisible));
+        };
+
+        let ticking = false;
+
+        const onScroll = () => {
+            if(ticking){
+                return;
             }
-            else{
-                setIsVisible(false);
-            }
+
+            ticking = true;
+            window.requestAnimationFrame(() => {
+                toggleVisibility();
+                ticking = false;
+            });
         };
 
         // Adds the event listener when the component mounts
-        window.addEventListener('scroll', toggleVisibility);
+        window.addEventListener("scroll", onScroll, { passive: true });
+        toggleVisibility();
 
         // Cleans up the listener when the component unmounts
-        return () => window.removeEventListener("scroll", toggleVisibility);
+        return () => window.removeEventListener("scroll", onScroll);
     }, []);
 
     const scrollToTop = () => {

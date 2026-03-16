@@ -38,7 +38,7 @@ export default function ProjectCard({ project }: { project: Project}){
     };
 
     return(
-        <article className = "group relative rounded-3xl border border-ink/5 bg-canvas/50 p-6 shadow-sm transition hover:shadow-soft hover:bg-canvas/60 backdrop-blur-sm">
+        <article className = "group relative rounded-3xl border border-ink/5 bg-canvas/90 p-6 shadow-sm transition hover:shadow-soft hover:bg-canvas/95">
             {/* Image Carousel */}
             {/* Only renders if there are images */}
             {project.images && project.images.length > 0 && (
@@ -47,6 +47,7 @@ export default function ProjectCard({ project }: { project: Project}){
                         src = {project.images[currentIndex]}
                         alt = {`${project.title} screenshot`}
                         fill
+                        sizes = "(min-width: 1280px) 472px, (min-width: 768px) calc((100vw - 5.5rem) / 2), calc(100vw - 3.5rem)"
                         className = "object-cover transition-transform duration-500 group-hover:scale-105"
                     />
 
@@ -56,7 +57,7 @@ export default function ProjectCard({ project }: { project: Project}){
                             {/* Left Arrow */}
                             <button
                                 onClick = {prevImage}
-                                className = "absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-canvas/40 p-1.5 text-ink/70 backdrop-blur-sm opacity-0 transition-all duration-300 hover:bg-canvas/90 hover:scale-110 hover:text-ink group-hover:opacity-100"
+                                className = "absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-canvas/90 p-1.5 text-ink/70 opacity-0 transition-all duration-300 hover:bg-canvas hover:scale-110 hover:text-ink group-hover:opacity-100"
                                 aria-label = "Previous Image"
                             >
                                 <svg xmlns = "http://www.w3.org/2000/svg" fill = "none" viewBox = "0 0 24 24" strokeWidth = {2} stroke = "currentColor" className = "h-4 w-4">
@@ -67,7 +68,7 @@ export default function ProjectCard({ project }: { project: Project}){
                             {/* Right Arrow */}
                             <button
                                 onClick={nextImage}
-                                className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-canvas/40 p-1.5 text-ink/70 backdrop-blur-sm opacity-0 transition-all duration-300 hover:bg-canvas/90 hover:scale-110 hover:text-ink group-hover:opacity-100"
+                                className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-canvas/90 p-1.5 text-ink/70 opacity-0 transition-all duration-300 hover:bg-canvas hover:scale-110 hover:text-ink group-hover:opacity-100"
                                 aria-label="Next Image"
                             >
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="h-4 w-4">
