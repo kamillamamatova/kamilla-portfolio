@@ -19,14 +19,19 @@ export default function BackgroundScene() {
       return;
     }
 
-    const webglContext =
-      canvas.getContext("webgl", { alpha: true, antialias: true }) ??
-      canvas.getContext("experimental-webgl", {
-        alpha: true,
-        antialias: true,
-      });
+    const webglContext = canvas.getContext("webgl", {
+      alpha: true,
+      antialias: true,
+    }) as WebGLRenderingContext | null;
 
-    if (!webglContext) {
+    const experimentalContext = canvas.getContext("experimental-webgl", {
+      alpha: true,
+      antialias: true,
+    }) as WebGLRenderingContext | null;
+
+    const context = webglContext ?? experimentalContext;
+
+    if (!context) {
       return;
     }
 
@@ -35,7 +40,7 @@ export default function BackgroundScene() {
     try {
       renderer = new THREE.WebGLRenderer({
         canvas,
-        context: webglContext,
+        context,
         antialias: true,
         alpha: true,
       });
