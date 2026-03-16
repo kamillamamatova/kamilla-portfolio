@@ -35,7 +35,7 @@ export default function BackgroundScene() {
       return;
     }
 
-    let renderer: THREE.WebGLRenderer;
+    let renderer;
 
     try {
       renderer = new THREE.WebGLRenderer({
@@ -191,12 +191,12 @@ export default function BackgroundScene() {
       core.geometry.dispose();
       accent.geometry.dispose();
       halo.geometry.dispose();
-      (particles.material as THREE.Material).dispose();
+      (particles.material as { dispose: () => void }).dispose();
       ringMaterial.dispose();
       ringTwo.material.dispose();
-      (core.material as THREE.Material).dispose();
-      (accent.material as THREE.Material).dispose();
-      (halo.material as THREE.Material).dispose();
+      (core.material as { dispose: () => void }).dispose();
+      (accent.material as { dispose: () => void }).dispose();
+      (halo.material as { dispose: () => void }).dispose();
       renderer.dispose();
     };
   }, []);
