@@ -14,7 +14,7 @@ export const projects: Project[] = [
     {
         title: "RocketTime",
         description: "A full-stack time management application with a React dashboard, a Node.js API, and Google OAuth authentication. Built to support task tracking, goal-setting, and time logging with a focus on API design and backend reliability.",
-        tags: ["TypeScript", "Node.js", "React", "MySQL2", "Google OAuth", "Express", "Google APIs", "Vite"],
+        tags: ["Node.js", "Express", "MySQL2", "TypeScript", "React", "Vite", "Google OAuth", "Render", "Aiven MySQL", "Google APIs","Groq APIs"],
         links: [
             { label: "Live", href: "https://rocket-time-1.onrender.com"},
             { label: "Code", href: "https://github.com/kamillamamatova/rocket-time"},
