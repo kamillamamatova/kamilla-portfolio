@@ -29,8 +29,9 @@ export const projects: Project[] = [
             "/rocket-time-landing-page-2.png",
             "/rocket-time-login-ss.png",
             "/rockettime dashboard.png",
-            "/rocket-time-transaction-ss.png",
-            "/rocket-time-time-spent-ss.png",
+            "/rocket-time-log-time.png",
+            "/rocket-time-goals-tasks.png",
+            "/rocket-time-analytics.png",
             "/rocket-time-ai-chat-ss.png",
             "/rocket-time-google-calendar-ss.png",
         ]
