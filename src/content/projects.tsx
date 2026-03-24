@@ -12,7 +12,7 @@ export type Project = {
 
 export const projects: Project[] = [
     {
-        title: "RocketTime",
+        title: "Rocket Time",
         description: "A full-stack time management application with a React dashboard, a Node.js API, and Google OAuth authentication. Built to support task tracking, goal-setting, and time logging with a focus on API design and backend reliability.",
         tags: ["Node.js", "Express", "MySQL2", "TypeScript", "React", "Vite", "Google OAuth", "Render", "Aiven MySQL", "Google APIs","Groq APIs"],
         links: [
