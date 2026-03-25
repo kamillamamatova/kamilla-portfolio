@@ -10,7 +10,7 @@ const sans = Inter({subsets: ["latin"], variable: "--font-sans"});
 const serif = Playfair_Display({subsets: ["latin"], variable: "--font-serif"});
 
 export const metadata: Metadata = {
-  title: "Kamilla Mamatova — Software Engineering",
+  title: "Kamilla Mamatova - Software Engineering",
   description: "Junior CS student focused on Software Engineering",
 
   icons: {
