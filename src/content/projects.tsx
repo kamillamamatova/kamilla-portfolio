@@ -50,7 +50,7 @@ export const projects: Project[] = [
             "Matching algorithm design and implementation",
         ],
         images: [
-            "/hot-take-singup.png",
+            "/hot-take-signup.png",
             "/hot-take-verification-page.png",
             "/hot-take-interests-page.png",
             "/hot-take-chat-page.png",
