@@ -59,6 +59,30 @@ export const projects: Project[] = [
         ]
     },
     {
+        title: "FocusUp",
+        description: "A lightweight, embeddable timer designed for tracking focus sessions, daily goals, and streaks. Built to be simple, fast, and easy to integrate into browsers or productivity tools.",
+        tags: ["HTML", "Node.js", "Express", "SQLite", "CSS", "Notion Sync"],
+        links: [
+            { label: "Live", href: "https://kamillamamatova.github.io/FocusUp/"},
+            { label: "Code", href: "https://github.com/kamillamamatova/focusup"},
+        ],
+        highlights: [
+            "Lightweight UI and interaction logic",
+            "Session tracking and state persistence",
+            "Designed for embeddability and simplicity",
+        ],
+        images: [
+            "/focusUpMainPage.png",
+            "/focusUpPomodoro.png",
+            "/focusUpLightTheme.png",
+            "/focusUpDarkTheme.png",
+            "/focusUpSignUpLogIn.png",
+            "/focusUpHistory.png",
+            "/focusUpSettings.png",
+            "/focusUpInNotion.png",
+        ]
+    },
+    {
         title: "Job Market Insights",
         description: "A responsive job search web application that fetches real-time listings from an external API and supports filtering by role, location, job type, and remote options.",
         tags: ["JavaScript", "React", "Axios", "Tailwind CSS", "HTML5", "RapidAPI"],
@@ -108,30 +132,6 @@ export const projects: Project[] = [
             "/mitsyprint14.png",
             "/mitsyprint15.png",
             "/mitsyprint16.png",
-        ]
-    },
-    {
-        title: "FocusUp",
-        description: "A lightweight, embeddable timer designed for tracking focus sessions, daily goals, and streaks. Built to be simple, fast, and easy to integrate into browsers or productivity tools.",
-        tags: ["HTML", "Node.js", "Express", "SQLite", "CSS", "Notion Sync"],
-        links: [
-            { label: "Live", href: "https://kamillamamatova.github.io/FocusUp/"},
-            { label: "Code", href: "https://github.com/kamillamamatova/focusup"},
-        ],
-        highlights: [
-            "Lightweight UI and interaction logic",
-            "Session tracking and state persistence",
-            "Designed for embeddability and simplicity",
-        ],
-        images: [
-            "/focusUpMainPage.png",
-            "/focusUpPomodoro.png",
-            "/focusUpLightTheme.png",
-            "/focusUpDarkTheme.png",
-            "/focusUpSignUpLogIn.png",
-            "/focusUpHistory.png",
-            "/focusUpSettings.png",
-            "/focusUpInNotion.png",
         ]
     },
 ];
