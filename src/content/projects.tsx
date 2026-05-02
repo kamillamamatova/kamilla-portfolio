@@ -36,6 +36,26 @@ export const projects: Project[] = [
             "/rocket-time-google-calendar-ss.png",
         ]
     },
+        {
+        title: "Hot Take",
+        description: "A full-stack discussion and matching app. The project pairs users based on shared tags and overlapping language in their bios, then lets them start one-on-one chats.",
+        tags: ["Node.js", "Express", "MongoDB", "Dart", "React", "Flutter", "Google OAuth", "Figma", "Digital Ocean"],
+        links: [
+            { label: "Live", href: "http://4331project.xyz/"},
+            { label: "Code", href: "https://github.com/kamillamamatova/Hot-Take"},
+        ],
+        highlights: [
+            "Designed desktop and mobile UI/UX in Figma",
+            "Integrated OAuth authentication",
+            "Matching algorithm design and implementation",
+        ],
+        images: [
+            "/hot-take-singup-page.png",
+            "/hot-take-verification-page.png",
+            "/hot-take-interests-page.png",
+            "/hot-take-chat-page.png",
+        ]
+    },
     {
         title: "AI Resume Analyzer",
         description: "A resume analysis tool that uses AI to generate structured feedback on content, clarity, and formatting. Handles file parsing, text extraction, and prompt-driven evaluation through an interactive web interface.",
