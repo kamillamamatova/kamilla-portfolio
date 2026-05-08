@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const links = [
-    { href: "/", label: "Home" },
+    { href: "/home", label: "Home" },
     { href: "/projects", label: "Projects" },
     { href: "/about", label: "About" },
     { href: "/contact", label: "Contact" },
@@ -12,7 +12,7 @@ export default function Nav(){
         <header className = "sticky top-0 z-40 border-b border-ink/10 bg-canvas/95">
             <div className = "mx-auto flex max-w-5xl items-center justify-between px-5 py-4">
                 <Link
-                    href = "/"
+                    href = "/home"
                     className = "group inline-flex items-baseline gap-2 text-base font-semibold tracking-tight"
                 >
                     <span className = "relative">
