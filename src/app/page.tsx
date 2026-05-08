@@ -6,7 +6,6 @@ import { ArrowRight } from "lucide-react";
 import LinedPaper from "@/components/LinedPaper";
 import ScallopedWashiTape from "@/components/ScallopedWashiTape";
 import Ribbon from "@/components/Ribbon";
-import Bow from "@/components/Bow";
 
 export default function Landing() {
   const router = useRouter();
@@ -42,7 +41,12 @@ export default function Landing() {
           style={{ maxWidth: "72rem" }}
         >
           <LinedPaper className="rounded-lg shadow-2xl px-16 py-14 md:px-36 md:py-20 border border-[#e8d5c4]">
-            <Bow className="-top-8 -left-6 md:-top-10 md:-left-8" size={80} color="#ffc9d4" />
+            <img
+              src="/pinkribbonbowcustom.png"
+              alt=""
+              className="absolute -top-12 -left-15 z-10"
+              style={{ width: 180, transform: "rotate(-27deg)" }}
+            />
             <ScallopedWashiTape className="top-12 -right-4 md:-right-8" rotation={45} />
             <ScallopedWashiTape className="bottom-16 -left-4 md:-left-8" rotation={-35} />
 
@@ -61,9 +65,9 @@ export default function Landing() {
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.5 }}
-                className="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6"
+                className="absolute -bottom-4 -right-4 md:-bottom-8 md:-right-8"
               >
-                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <svg width="63" height="63" viewBox="0 0 48 48" fill="none">
                   <path
                     d="M24 42C24 42 6 30 6 16.5C6 12 9 9 13.5 9C16.5 9 19.5 10.5 24 15C28.5 10.5 31.5 9 34.5 9C39 9 42 12 42 16.5C42 30 24 42 24 42Z"
                     fill="#ffc9d4"
