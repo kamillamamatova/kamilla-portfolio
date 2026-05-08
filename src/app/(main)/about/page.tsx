@@ -218,7 +218,11 @@ export default function AboutPage(){
                         "Statistical Methods I",
                         "Computer Logic and Organization",
                         "Discrete I",
+                        "Discrete II",
                         "Object-Oriented Programming",
+                        "Database Systems",
+                        "System Software",
+                        "Process for Object Oriented Software Development"
                     ].map((course) => (
                         <li key = {course} className = "flex items-center gap-2">
                             <span className = "h-1.5 w-1.5 rounded-full bg-petal/60" />
