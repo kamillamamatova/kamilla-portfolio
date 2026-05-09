@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
+import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { ArrowRight } from "lucide-react";
 import LinedPaper from "@/components/LinedPaper";
@@ -9,6 +10,13 @@ import Ribbon from "@/components/Ribbon";
 
 export default function Landing() {
   const router = useRouter();
+
+  // Redirect mobile users directly to the home page
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      router.replace("/home");
+    }
+  }, [router]);
 
   return (
     <>
