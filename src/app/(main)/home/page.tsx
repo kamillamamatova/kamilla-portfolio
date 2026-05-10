@@ -63,7 +63,7 @@ export default function HomePage(){
         </div>
       </section>
 
-      <section className="grid gap-4 md:grid-cols-3">
+      <section className="grid gap-4 md:grid-cols-3 mt-22">
         {[
           {
             title: "Building real things",
@@ -80,8 +80,14 @@ export default function HomePage(){
         ].map((c) => (
           <div
             key={c.title}
-            className="rounded-2xl border border-ink/10 bg-canvas p-6 shadow-soft"
+            className="rounded-2xl border border-ink/10 bg-canvas p-6 shadow-soft relative"
           >
+            <img
+              src="/lightflowerpink.png"
+              alt=""
+              className="absolute -top-6 left-1/23 -translate-x-1/2"
+              style={{ width: 45 }}
+            />
             <h2 className="text-base font-serif">{c.title}</h2>
             <p className="mt-2 text-sm leading-relaxed text-ink/75">{c.body}</p>
           </div>
