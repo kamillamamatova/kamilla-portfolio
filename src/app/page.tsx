@@ -53,7 +53,7 @@ export default function Landing() {
               src="/pinkribbonbowcustom.png"
               alt=""
               className="absolute -top-12 -left-15 z-10"
-              style={{ width: 180, transform: "rotate(-27deg)", opacity: 0.75 }}
+              style={{ width: 180, transform: "rotate(-27deg)", opacity: 0.85 }}
             />
             <ScallopedWashiTape className="top-12 -right-4 md:-right-8" rotation={45} />
             <ScallopedWashiTape className="bottom-16 -left-4 md:-left-8" rotation={-35} />
