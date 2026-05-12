@@ -70,12 +70,12 @@ export const projects: Project[] = [
             "Resume parsing and data preprocessing",
         ],
         images: [
-            "/ai-resume-analyzer-dashboard.png",
-            "/ai-resume-analyzer-ai-feedback1.png",
-            "/ai-resume-analyzer-score-breakdown1.png",
-            "/ai-resume-analyzer-graphs1.png",
-            "/ai-resume-analyzer-feedback1.png",
-            "/ai-resume-analyzer-download-proof1.png",
+            "/projects/ai resume analyzer/ai-resume-analyzer-dashboard.png",
+            "/projects/ai resume analyzer/ai-resume-analyzer-ai-feedback1.png",
+            "/projects/ai resume analyzer/ai-resume-analyzer-score-breakdown1.png",
+            "/projects/ai resume analyzer/ai-resume-analyzer-graphs1.png",
+            "/projects/ai resume analyzer/ai-resume-analyzer-feedback1.png",
+            "/projects/ai resume analyzer/ai-resume-analyzer-download-proof1.png",
         ]
     },
     {
