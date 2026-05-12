@@ -13,11 +13,11 @@ export const metadata: Metadata = {
 
   icons: {
     icon: [
-      { url: "/icon4.png", sizes: "32x32", type: "image/png" },
-      { url: "/icon4.png", sizes: "192x192", type: "image/png" },
+      { url: "/favicons/icon4.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicons/icon4.png", sizes: "192x192", type: "image/png" },
     ],
-    apple: "/icon4.png",
-    shortcut: "/icon4.png",
+    apple: "/favicons/icon4.png",
+    shortcut: "/favicons/icon4.png",
   },
 
   openGraph: {
