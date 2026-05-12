@@ -116,8 +116,8 @@ export const projects: Project[] = [
             "Responsive UI design",
         ],
         images: [
-            "/job-market-insights-dashboard-new.png",
-            "/job-market-insights-link-new.png",
+            "/projects/job market insights/job-market-insights-dashboard-new.png",
+            "/projects/job market insights/job-market-insights-link-new.png",
             //"/job-market-insights-link.png",
         ]
     },
