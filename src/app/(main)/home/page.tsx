@@ -83,7 +83,7 @@ export default function HomePage(){
             className="rounded-2xl border border-ink/10 bg-canvas p-6 shadow-soft relative"
           >
             <img
-              src="/lightflowerpink.png"
+              src="/components/buttons/lightflowerpink.png"
               alt=""
               className="absolute -top-6 left-1/23 -translate-x-1/2"
               style={{ width: 45 }}
